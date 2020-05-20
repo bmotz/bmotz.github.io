@@ -85,9 +85,9 @@ author:
   bio              : "I'm a cognitive scientist at Indiana University studing the relationships between cognitive theories of human learning, psychological theories of student engagement, and what goes on in college classes."
   location         : "Bloomington, Indiana"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?sortby=pubdate&user=cMIgOU8AAAAJ"
-  email            :
+  email            : 
   researchgate     :  "https://www.researchgate.net/profile/Benjamin_Motz2/"
   uri              :
   bitbucket        :
