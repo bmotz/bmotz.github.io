@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Ben Motz"
 title_separator          : "-"
 name                     : &name "Ben Motz"
-description              : &description "I'm a cognitive scientist at Indiana University studing the relationships between cognitive theories of human learning, psychological theories of student engagement, and what goes on in college classes."
+description              : &description "Description"
 url                      : https://bmotz.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bmotz/bmotz.github.io"
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Ben Motz"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "I'm a cognitive scientist at Indiana University studing the relationships between cognitive theories of human learning, psychological theories of student engagement, and what goes on in college classes."
+  location         : "Bloomington, Indiana"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?sortby=pubdate&user=cMIgOU8AAAAJ"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  "https://www.researchgate.net/profile/Benjamin_Motz2/"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "https://github.com/bmotz"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/benjamin-motz-7741446"
+  orcid            : "https://orcid.org/0000-0002-0379-2184"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "benmotz"
   vine             :
   weibo            :
   xing             :
