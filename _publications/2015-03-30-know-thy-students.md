@@ -2,6 +2,7 @@
 title: "Know Thy Students: Providing Aggregate Student Data to Instructors"
 collection: publications
 permalink: /publication/2015-03-30-know-thy-students
+excerpt: ''
 date: 2015-03-30
 venue: 'EDUCAUSE Review Online (Peer Reviewed Category)'
 paperurl: 'http://bmotz.github.io/files/Motz_Teague_and_Shepard_2015.pdf'
