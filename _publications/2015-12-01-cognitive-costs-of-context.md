@@ -3,6 +3,7 @@ title: "The Cognitive Costs of Context: The Effects of Concreteness and Immersiv
 collection: publications
 permalink: /publication/2015-12-01-cognitive-costs-of-context
 date: 2015-12-01
+excerpt: ''
 venue: 'Frontiers in Psychology'
 paperurl: 'http://bmotz.github.io/files/Day_Motz_Goldstone_2015.pdf'
 citation: 'Day, S., Motz, B., Goldstone, R. (2015). The cognitive costs of context: The effects of concreteness and immersiveness in instructional examples. <i>Frontiers in Psychology, 6</i>(1876). doi: 10.3389/fpsyg.2015.01876'
