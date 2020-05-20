@@ -6,5 +6,5 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Stuff"
-    url: /stuff/
+  - title: "Posts"	
+    url: /year-archive/
