@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: "Know Thy Students: Providing Aggregate Student Data to Instructors"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2015-03-30-know-thy-students
+excerpt: 'We developed the institutional Student Profile Report, which informs instructors about the demographics, enrollment history, and general academic performance of the students in their upcoming classes before the start of the semester'
+date: 2015-03-30
+venue: 'EDUCAUSE Review Online (Peer Reviewed Category)'
+paperurl: 'http://bmotz.github.io/files/Motz_Teague_and_Shepard_2015.pdf'
+citation: 'Motz, B., Teague, J., & Shepard, L. (2015). Know thy students: An institutional report that provides aggregate student data to instructors. <i>EDUCAUSE Review Online (Peer Reviewed Category).</i> http://www.educause.edu/ero/article/know-thy-students-providing-aggregate-student-data-to-instructors'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+Learner-centered approaches to higher education require that instructors have insight into their students' characteristics, but instructors often prepare their courses long before they have an opportunity to meet the students. To address this dilemma, we developed the institutional Student Profile Report, which informs instructors about the demographics, enrollment history, and general academic performance of the students in their upcoming classes before the start of the semester. Survey results indicated that instructors found the report interesting and useful, and our analysis of grade outcomes found that the report did not introduce bias in letter grade assignment.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](http://bmotz.github.io/files/Motz_Teague_and_Shepard_2015.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Motz, B., Teague, J., & Shepard, L. (2015). Know thy students: An institutional report that provides aggregate student data to instructors. <i>EDUCAUSE Review Online (Peer Reviewed Category).</i> http://www.educause.edu/ero/article/know-thy-students-providing-aggregate-student-data-to-instructors.
