@@ -2,7 +2,6 @@
 title: "Know Thy Students: Providing Aggregate Student Data to Instructors"
 collection: publications
 permalink: /publication/2015-03-30-know-thy-students
-excerpt: 'We developed the institutional Student Profile Report, which informs instructors about the demographics, enrollment history, and general academic performance of the students in their upcoming classes before the start of the semester'
 date: 2015-03-30
 venue: 'EDUCAUSE Review Online (Peer Reviewed Category)'
 paperurl: 'http://bmotz.github.io/files/Motz_Teague_and_Shepard_2015.pdf'
