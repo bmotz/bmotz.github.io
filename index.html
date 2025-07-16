@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Motz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            margin: 2rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #34495e;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .social-links a:hover {
+            color: #3498db;
+        }
+
+        .cv-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background 0.2s ease;
+            margin-top: 1rem;
+        }
+
+        .cv-link:hover {
+            background: #2980b9;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        /* About section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+            margin-bottom: 2rem;
+        }
+
+        .profile-image {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .about-text a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .about-text a:hover {
+            text-decoration: underline;
+        }
+
+        .organizations {
+            margin: 2rem 0;
+        }
+
+        .organizations h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .organization {
+            margin-bottom: 1rem;
+        }
+
+        .organization a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .organization a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact */
+        .contact {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .contact h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .contact p {
+            color: #555;
+            margin: 0;
+        }
+
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Publications */
+        .publication {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #ecf0f1;
+            transition: all 0.3s ease;
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+        }
+
+        .publication p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .publication a {
+            color: #3498db;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .publication a:hover {
+            text-decoration: underline;
+        }
+
+        .publication em {
+            font-style: italic;
+        }
+
+        /* Building Understanding Animation */
+        .section-header {
+            overflow: hidden;
+        }
+
+        .section-header .letter {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            animation-fill-mode: forwards;
+        }
+
+        .section-header.animate .letter {
+            animation: buildUnderstanding 0.6s ease-out forwards;
+        }
+
+        @keyframes buildUnderstanding {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-image {
+                max-width: 200px;
+                margin: 0 auto;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .social-links {
+                gap: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ben Motz</h1>
+            <p class="subtitle">(he rhymes with boats)</p>
+            
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/benjamin-motz-7741446" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Benjamin_Motz2/" title="ResearchGate">
+                    <i class="ai ai-researchgate"></i>
+                </a>
+                <a href="https://twitter.com/BenMotz" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?sortby=pubdate&user=cMIgOU8AAAAJ" title="Google Scholar">
+                    <i class="ai ai-google-scholar"></i>
+                </a>
+                <a href="https://orcid.org/0000-0002-0379-2184" title="ORCID">
+                    <i class="ai ai-orcid"></i>
+                </a>
+            </div>
+
+            <a href="motz_cv.pdf" class="cv-link">
+                <i class="fas fa-file-pdf"></i> Download CV
+            </a>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2 class="section-header">About</h2>
+                <div class="about-content">
+                    <img src="./img/profilePic.jpg" alt="Ben Motz" class="profile-image" />
+                    <div class="about-text">
+                        <p>I'm a cognitive scientist working at the intersection of cognitive psychology and education. My research is characterized by large-scale experiments and analyses on students from real education settings that test theoretical predictions from the psychological science of learning.</p>
+                        <p><strong><a href="https://changelab.psych.indiana.edu">Change Lab</a></strong> - I lead the Change Lab in the Department of Psychological and Brain Sciences at Indiana University.</p>
+                        <p><strong><a href="https://terracotta.education">Terracotta</a></strong> - I also run Terracotta, a learning management system plugin that makes it easy for teachers and researchers to embed studies directly in their course sites.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="publications">
+                <h2 class="section-header">Recent Papers</h2>
+                
+                <div class="publication">
+                    <p>Motz, B. (2024). Concentration toward the mode: Estimating changes in the shape of a distribution of student data. <em>Journal of School Psychology, 107</em>, 101364. doi: <a href="https://doi.org/10.1016/j.jsp.2024.101364">10.1016/j.jsp.2024.101364</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Rust, M. & Motz, B. (preprint). Incorporating an LMS learning analytic into proactive advising: Validity and use in a randomized experiment. EdArXiv. doi: <a href="https://osf.io/preprints/edarxiv/sjw2b">10.35542/osf.io/sjw2b</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Motz, B., Kruschke, J. K., Hetrick, W. P., James, T., & Puce, A. (preprint). Expectations for rhythmic sounds increase bottom-up visual attention. <em>PsyArXiv</em>. doi: <a href="https://doi.org/10.31234/osf.io/b2uaj">10.31234/osf.io/b2uaj</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Motz, B., Üner, Ö, Jankowski, H., Christie, M., Burgas, K., del Blanco Orobitg, D., & McDaniel, M. (2023). Terracotta: A tool for conducting experimental research on student learning. <em>Behavior Research Methods</em>. doi: <a href="https://doi.org/10.3758/s13428-023-02164-8">10.3758/s13428-023-02164-8</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Motz, B., Quick, J., Brooks, C., Bergner, Y., Gray, G., Lang, C., Li, W., & Marmolejo-Ramos, F. (2023). A LAK of direction: Misalignment between the goals of learning analytics and its research scholarship. <em>Journal of Learning Analytics, 10</em>(2), 1-13. doi: <a href="https://doi.org/10.18608/jla.2023.7913">10.18608/jla.2023.7913</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Motz, B. & Morrone, A. (2023). Wild brooms and learning analytics. <em>Journal of Computing in Higher Education</em>. doi: <a href="https://doi.org/10.1007/s12528-023-09353-6">10.1007/s12528-023-09353-6</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Quick, J., Motz, B., & Morrone, A. (2023). Lost in translation: Determining the generalizability of temporal models across course contexts. <em>Proceedings of the 13th International Conference on Learning Analytics & Knowledge (LAK20)</em>. doi: <a href="https://doi.org/10.1145/3576050.3576092">10.1145/3576050.3576092</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Motz, B., Fyfe, E., & Guba, T. (2022). Learning to call bullsh*t via induction: Categorization training improves critical thinking performance. <em>Journal of Applied Research in Memory and Cognition</em>. doi: <a href="https://doi.org/10.1037/mac0000053">10.1037/mac0000053</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>de Leeuw, J., Motz, B., Fyfe, E., Carvalho, P., & Goldstone, R. (2022). Generalizability, transferability, and the practice-to-practice gap. Commentary in response to T. Yarkoni, The Generalizability Crisis. <em>Behavioral and Brain Sciences, 45</em>, e11. doi: <a href="https://doi.org/10.1017/S0140525X21000406">10.1017/S0140525X21000406</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Motz, B., Goldstone, R., Busey, T., & Prather, R. (2021). Visual search asymmetry due to the relative magnitude represented by number symbols. <em>Vision, 5</em>(3), 42. doi: <a href="https://doi.org/10.3390/vision5030042">10.3390/vision5030042</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Motz, B., Canning, E., Green, D., Mallon, M., & Quick, J. (2021). The influence of automated praise on behavior and performance. <em>Technology, Mind, and Behavior, 2</em>(3). doi: <a href="https://doi.org/10.1037/tmb0000042">10.1037/tmb0000042</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Fyfe, E., de Leeuw, J. R., Carvalho, P. F., Goldstone, R., Sherman, J., [42 others] & Motz, B. (2021). ManyClasses 1: Assessing the generalizable effect of immediate versus delayed feedback across many college classes. <em>Advances in Methods and Practices in Psychological Science, 4</em>(3), 1-24. doi: <a href="https://doi.org/10.1177/25152459211027575">10.1177/25152459211027575</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p>Motz, B., Mallon, M., & Quick, J. (2021). Automated educative nudges to reduce missed assignments in college. <em>IEEE Transactions on Learning Technologies, 14</em>(2), 186-200. doi: <a href="https://doi.org/10.1109/TLT.2021.3064613">10.1109/TLT.2021.3064613</a></p>
+                </div>
+                
+                <div class="publication">
+                    <p style="text-align: center; font-style: italic; color: #7f8c8d;">
+                        [Want more? The rest are listed in <a href="./motz_cv.pdf">Ben's CV</a>]
+                    </p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2 class="section-header">Contact</h2>
+                <div class="contact">
+                    <h3>Contact Details</h3>
+                    <p>
+                        Benjamin Motz<br>
+                        1101 East 10th Street<br>
+                        Bloomington, IN 47405 USA<br>
+                        (812) 855-0318<br>
+                        <a href="mailto:bmotz@indiana.edu">bmotz@indiana.edu</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Ben Motz</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Building Understanding Animation
+        function initSectionHeaders() {
+            const headers = document.querySelectorAll('.section-header');
+            
+            headers.forEach(header => {
+                const text = header.textContent;
+                header.innerHTML = '';
+                
+                // Split text into letters and spaces
+                text.split('').forEach((char, index) => {
+                    const span = document.createElement('span');
+                    span.classList.add('letter');
+                    span.textContent = char === ' ' ? '\u00A0' : char; // Use non-breaking space
+                    span.style.animationDelay = `${index * 0.05}s`;
+                    header.appendChild(span);
+                });
+            });
+        }
+
+        // Intersection Observer for animation triggers
+        function setupIntersectionObserver() {
+            const options = {
+                threshold: 0.3,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const header = entry.target.querySelector('.section-header');
+                        if (header) {
+                            header.classList.add('animate');
+                        }
+                    }
+                });
+            }, options);
+
+            // Observe all sections
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            initSectionHeaders();
+            setupIntersectionObserver();
+        });
+    </script>
+</body>
+</html>
